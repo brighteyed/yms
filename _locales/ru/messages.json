@@ -1,0 +1,25 @@
+{
+  "extName": {
+    "message": "Поиск на Яндекс.Маркет"
+  },
+
+  "extDesc": {
+    "message": "Поиск товаров с помощью Яндекс.Маркет"
+  },
+
+  "contextMenuItem": {
+    "message": "Искать на Яндекс.Маркет"
+  },
+
+  "aboutTitle": {
+    "message": "О расширении"
+  },
+
+  "aboutContents": {
+    "message": "Быстрый поиск товаров с помощью <a href=\"http://market.yandex.ru/\">Яндекс.Маркет</a>"
+  },
+
+  "creditsTitle": {
+    "message": "Благодарности"
+  }
+}
