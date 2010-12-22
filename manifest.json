@@ -1,7 +1,7 @@
 {
   "name": "__MSG_extName__",
 
-  "version": "0.1.1",
+  "version": "0.2.0",
 
   "description": "__MSG_extDesc__",
 
@@ -13,6 +13,13 @@
   },
 
   "background_page": "background.html",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["js/selection.js"]
+    } 
+  ],
 
   "options_page": "options.html",
 
