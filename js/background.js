@@ -18,24 +18,3 @@ var id = chrome.contextMenus.create({"title": chrome.i18n.getMessage("contextMen
 		       "contexts": ["selection"], 
 		       "onclick": doSearch});
 
-// Update menu item title on request
-chrome.extension.onRequest.addListener(
-  function(request, sender, sendResponse) {
-
-    if (request.action == "updateContextMenu") {
-
-      var text = request.text.length < 43 ? request.text : request.text.slice(0, 40) + "...";
-      text = ' "' + text + '"';
-
-      chrome.contextMenus.update(id, {"title": chrome.i18n.getMessage("contextMenuItem") + text});
-    }
-
-    sendResponse({});
-  });
-
-// Clear menu item when selected tab has changed
-chrome.tabs.onSelectionChanged.addListener(
-  function(tab) {
-    chrome.contextMenus.update(id, {"title": chrome.i18n.getMessage("contextMenuItem")});
-  });
-

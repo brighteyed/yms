@@ -18,17 +18,9 @@
       "scripts": ["js/background.js"]
   },
 
-  "content_scripts": [
-    {
-      "matches": ["http://*/*"],
-      "js": ["js/selection.js"]
-    } 
-  ],
-
   "options_page": "options.html",
 
   "permissions": [
-    "contextMenus",
-    "tabs"
+    "contextMenus"
   ]
 }
